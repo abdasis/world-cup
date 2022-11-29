@@ -3,9 +3,23 @@
     font-weight: 600;
 }
 body{
-    background: #F7F7F7;
+    background: #F9F9FB !important;
 }
 
 .content{
     padding: 30px 20px;
+}
+
+.salam{
+    margin-top: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+    background: rgb(255,0,89);
+    background: linear-gradient(50deg, rgba(255,0,89,1) -19%, rgba(254,148,186,0.70) 100%),  url("../img/bg-lapangan.png");
+    padding: 20px;
+}
+
+.salam h1{
+    color: #fff;
+    font-weight: 700;
 }
