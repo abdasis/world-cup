@@ -4,6 +4,7 @@ import './assets/css/styles.css'
 import axios from "axios";
 import Logo from "./assets/img/Logo.jsx";
 import {AiFillHeart, BiBall, IoFootballOutline, MdDateRange, SlUserFollow} from "react-icons/all";
+import Navigasi from "./components/Navigasi";
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
                     <div className="salam-overlay"></div>
                     <div className="kata-salam my-auto">
                         <h1 className={'mb-0'}>Ahlan Wasahlan</h1>
-                        <p className={'text-white'}>Dapatkan jadwal terbaru di piala dunia</p>
+                        <p className={'text-white'}>Dapatkan jadwal terbaru dari Piala Dunia Qatar 2022</p>
                         <a href="https://facebook.com/lazizdev" className='text-decoration-none'>
                             <button className="btn btn-light width-md btn-sm d-flex align-items-center gap-1">
                                 <SlUserFollow/>
