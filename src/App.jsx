@@ -40,7 +40,7 @@ function App() {
             </div>
             <div className="container content">
                 <h1 className='spotlight-title'>Hari Ini</h1>
-                {hariIni && hariIni.map((jadwal) =>
+                {hariIni ? hariIni.map((jadwal) =>
                     <div key={jadwal.id} className="card bg-white border-light mb-2 border">
                         <div className="card-body">
                             <div className="row justify-content-around mt-3">
@@ -70,7 +70,13 @@ function App() {
                             </div>
                         </div>
                     </div>
-                )}
+                ) :
+                    <div>
+                        <div className="alert alert-warning">
+                            Tidak ada data yang bisa di tampilkan silahkan refresh halaman
+                        </div>
+                    </div>
+                }
             </div>
             <footer className={'bg-white py-3'}>
                 <div className="text-center">
