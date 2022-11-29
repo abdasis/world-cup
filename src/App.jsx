@@ -43,11 +43,11 @@ function App() {
                 {hariIni && hariIni.map((jadwal) =>
                     <div key={jadwal.id} className="card bg-white border-light mb-2 border">
                         <div className="card-body">
-                            <div className="row justify-content-around">
+                            <div className="row justify-content-around mt-3">
                                 <div className="col-12 mb-2">
                                     <div className="text-center">
-                                        <h5>{jadwal.venue}</h5>
-                                        <p className='text-pink fw-semibold rounded d-flex align-items-center justify-content-center gap-1'>
+                                        <h5 className={'nama-stadion'}>{jadwal.venue}</h5>
+                                        <p className='text-pink jadwal rounded d-flex align-items-center justify-content-center gap-1'>
                                             <MdDateRange/>
                                             {new Date(jadwal.datetime).toLocaleString('id-ID' , {dateStyle: 'medium', timeStyle: 'medium'})}
                                         </p>

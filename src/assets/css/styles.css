@@ -1,37 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;0,800;0,900;1,700&display=swap');
 
-.spotlight-title{
+* {
+    font-family: 'Inter Tight', sans-serif;
+
+}
+
+.spotlight-title {
     font-size: 20px;
     font-weight: 600;
 }
-body{
+
+body {
     background: #F9F9FB !important;
 }
 
-.content{
+.content {
     padding: 30px 20px;
 }
 
-.salam{
+.salam {
     margin-top: 20px;
     min-height: 200px;
     border-radius: 10px;
-    background: rgb(255,0,89);
-    background: linear-gradient(50deg, rgba(255,0,89,1) -19%, rgba(254,148,186,0.70) 100%),  url("../img/bg-lapangan.png");
+    background: rgb(255, 0, 89);
+    background: linear-gradient(50deg, rgba(255, 0, 89, 1) -19%, rgba(254, 148, 186, 0.70) 100%), url("../img/bg-lapangan.png");
     padding: 20px;
 }
 
-.salam h1{
+.nama-stadion{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.jadwal{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.salam h1 {
     color: #fff;
     font-weight: 700;
     font-family: 'Inter Tight', sans-serif;
 }
 
-.bg-pink{
-    background: rgb(255,0,89);
-    background: linear-gradient(50deg, rgba(255,0,89,1) -19%, rgba(254,148,186,1) 100%);
+.bg-pink {
+    background: rgb(255, 0, 89);
+    background: linear-gradient(50deg, rgba(255, 0, 89, 1) -19%, rgba(254, 148, 186, 1) 100%);
 }
 
-.text-pink{
-    color: rgb(255,130,174);
+.text-pink {
+    color: rgb(255, 130, 174);
 }
