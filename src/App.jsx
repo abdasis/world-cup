@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import './assets/css/styles.css'
 import axios from "axios";
 import Logo from "./assets/img/Logo.jsx";
-import {SlUserFollow} from "react-icons/all";
+import {AiFillHeart, BiBall, IoFootballOutline, MdDateRange, SlUserFollow} from "react-icons/all";
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
                         <a href="https://facebook.com/lazizdev" className='text-decoration-none'>
                             <button className="btn btn-light width-md btn-sm d-flex align-items-center gap-1">
                                 <SlUserFollow/>
-                                Ikuti
+                                <span>Ikuti Aku</span>
                             </button>
                         </a>
                     </div>
@@ -47,23 +47,40 @@ function App() {
                                 <div className="col-12 mb-2">
                                     <div className="text-center">
                                         <h5>{jadwal.venue}</h5>
-                                        <p>{new Date(jadwal.datetime).toLocaleString('id-ID' , {dateStyle: 'medium', timeStyle: 'medium'})}</p>
+                                        <p className='text-pink fw-semibold rounded d-flex align-items-center justify-content-center gap-1'>
+                                            <MdDateRange/>
+                                            {new Date(jadwal.datetime).toLocaleString('id-ID' , {dateStyle: 'medium', timeStyle: 'medium'})}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="row justify-content-center">
-                                <div className="col-4 text-center">
+                                <div className="col-5 text-center">
                                     <Logo negara={jadwal.home_team_country}/>
+                                    <p className={'mt-1'}>{jadwal.home_team.name}</p>
                                 </div>
-                                <div className="col-auto text-center my-auto">vs</div>
-                                <div className="col-4 text-center">
+                                <div className="col-2 text-center my-auto">
+                                    <IoFootballOutline className={'fs-1'}/>
+                                    <div>vs</div>
+                                </div>
+                                <div className="col-5 text-center">
                                     <Logo negara={jadwal.away_team_country}/>
+                                    <p className={'mt-1'}>{jadwal.away_team.name}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 )}
             </div>
+            <footer className={'bg-white py-3'}>
+                <div className="text-center">
+                    Dibuat dengan <AiFillHeart className='text-danger'/> Oleh Abdul Aziz
+                    <br/>
+                    <small className="text-muted">
+                        Dengan Lisensi MIT
+                    </small>
+                </div>
+            </footer>
         </div>
     )
 }
